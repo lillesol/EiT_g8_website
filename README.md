@@ -17,8 +17,15 @@ Run the command inside the project root folder.
 npm install
 ```
 
+If the command fails, try to update your npm package manager.
+Then redo the step above,
+```bash
+npm install -g npm@latest
+```
+
+
 ## Usage
-In order to run the project locally type the command below after doing the steps above
+In order to run the project locally type the command below after doing the steps above.
 
 ```bash
 npm start
