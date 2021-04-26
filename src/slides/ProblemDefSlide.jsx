@@ -14,14 +14,15 @@ const useStyles = makeStyles((theme) => ({
 
     textItem: {
         width: '70vw',
+        border: '10px solid transparent',
+        borderImage: 'linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c)',
+        borderImageSlice: '1',
         marginLeft: 'auto',
         marginRight: 'auto',
         fontSize: '42px',
         display: 'flex',
         textAlign: 'center',
         padding: '5px 0px 5px 0px',
-        color: 'grey',
-        fontStyle: 'italic',
     }
 
 }));
@@ -34,7 +35,9 @@ const ProblemDefSlide = () => {
         <div className={slideStyles.root}>
             <Grid container direction='row' className={slideStyles.textItem}>
                 <Grid item >
-                    &#34;In excess of 60.000 Norwegians has experienced blackout due to falling trees during the night.&#34;
+                With increasing growth of the electrical vehicle fleet and renewable energy sources society is struggling with
+                inefficient EV battery recycling, electrical power congestion, frequency instability,
+                and the high maximum demand tariffs on power consumers.
                 </Grid>
             </Grid>
         </div>

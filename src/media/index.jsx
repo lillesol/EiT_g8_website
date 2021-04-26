@@ -1,5 +1,35 @@
 const media = {
     images: {
+
+        Sidebar: {
+            icon1: require('./images/WebsitePictures/sidebar_1.png'),
+            icon2: require('./images/WebsitePictures/sidebar_2.png'),
+            icon3: require('./images/WebsitePictures/sidebar_3.png'),
+            icon4: require('./images/WebsitePictures/sidebar_4.png'),
+            icon5: require('./images/WebsitePictures/sidebar_5.png'),
+            icon6: require('./images/WebsitePictures/sidebar_6.png'),
+            icon7: require('./images/WebsitePictures/sidebar_7.png'),
+            icon8: require('./images/WebsitePictures/sidebar_8.png'),
+            icon9: require('./images/WebsitePictures/sidebar_9.png'),
+            icon10: require('./images/WebsitePictures/sidebar_video.png')
+        },
+
+        InfoBoxImages: {
+            RecyclingMethodDiagram: require('./images/WebsitePictures/Recycling_method_table.png'),
+            BuildingBob: require('./images/WebsitePictures/Byggmester_bob.png'),
+
+            Icons: {
+                AquirementBattery: require('./images/WebsitePictures/checkbox_acquirement_of_batteries.png'),
+                PeakShaving: require('./images/WebsitePictures/checkbox_peak_shaving.png'),
+                Profitability: require('./images/WebsitePictures/checkbox_profitability.png'),
+                RecyclingMethod: require('./images/WebsitePictures/checkbox_recycling_methods.png'),
+                Wrench: require('./images/WebsitePictures/checkbox_wrench.png'),
+                
+            }
+        },
+
+        ExpandedDiagram: require('./images/WebsitePictures/Big_flow_chart_with_text.png'),
+
         SystemDiagram: require('./images/EiTdrawing.png'),
 
         MainBackground: require('./images/mountainBG.png'),

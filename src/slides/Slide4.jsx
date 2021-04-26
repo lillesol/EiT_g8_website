@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
         padding: 0,
         borderRadius: 0,
         opacity: 1,
-        width: '95%',
+        width: '90%',
         marginLeft: 'auto',
         marginRight: 'auto',
         color: 'WHITE',
@@ -22,12 +22,9 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: '20px',
     },
 
-    imageNight: {
-        width: '35vw',
-    },
-
+    
     imageCity: {
-        width: '15vw', 
+        height: '70vh', 
     }
 
 }));
@@ -38,21 +35,19 @@ const Slide4 = () => {
     const slideStyles = useStyles();
     return (
         <div className="Slide4">
-            <Grid container direction='row' spacing={4} justify='flex-start' className={slideStyles.graphGrid}>
-                <Grid item style={{ fontSize: '25px', width: '35%' }}>
-                    <h1> Why is it economically <span style={{ color: 'ORANGE', fontSize: '96px' }}>beneficial?</span> </h1>
-                    Due to the demand of power varying during the day,
-                    utility companies have added a maximum demand tariff for businesses.
-                    This results in the businesses being charged extra for the hours with the highest power demand during a month.
-                    The RE-vengers battery system is designed to bid on the frequency marked and perform peak shaving.
+            <Grid container direction='row' spacing={8} justify='flex-start' alignItems='center' className={slideStyles.graphGrid}>
+                <Grid item xs={6} style={{ fontSize: '25px' }}>
+                    <h1> How does it <span style={{ color: 'ORANGE', fontSize: '96px' }}>work?</span> </h1>
+                    When the Transmission System Operator (TSO) observes a frequency discrepancy, the battery system will activate.
+                    However, when the market prices are low and the battery systems are not needed for frequency control,
+                    they will instead be utilized to help the consumer and the utility company by lowering the power demand on the power grid.
+                    In other words, the RE-vengers battery systems will secure the stability in the power grid and act as a frequency regulator
+                    by using advanced power electronics and algorithms to predict the power usage and market prices.
                 </Grid>
-                <Grid xs={7} item >
-                    <Grid container direction='row' spacing={4} alignItems='stretch' justify='flex-end' >
-                        <Grid item >
-                            <img className={slideStyles.imageNight} src={media.images.WebsitePictures.Nightsky.default} />
-                        </Grid>
-                        <Grid item >
-                            <img className={slideStyles.imageCity} src={media.images.WebsitePictures.city.default} />
+                <Grid xs={6} item >
+                    <Grid container direction='row' justify='center' alignItems='baseline'>
+                        <Grid item>
+                        <img className={slideStyles.imageCity} src={media.images.WebsitePictures.city.default} />
                         </Grid>
                     </Grid>
                 </Grid>

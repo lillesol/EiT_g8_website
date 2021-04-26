@@ -11,8 +11,11 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import media from '../media';
+import Videoslide from '../slides/Videoslide';
 
-const drawerWidth = '10%';
+const drawerWidth = '7%';
+
+const windowheight = window.innerHeight-20;
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -30,13 +33,15 @@ const useStyles = makeStyles((theme) => ({
     listElement: {
         display: 'inline-block',
         textAlign: 'center',
+        height: '10vh',
 
     },
 
     IconText: {
         color: 'white',
         textAlign: 'inherit',
-	},
+        fontSize: '10em',
+    },
 
     drawerPaper: {
         background: '#2F303A',
@@ -45,10 +50,18 @@ const useStyles = makeStyles((theme) => ({
     },
     // necessary for content to be below app bar
     toolbar: theme.mixins.toolbar,
+
+    scrollfunc: {
+        top: '100',
+        left: '100',
+        behaviour: 'smooth',
+    }
 }));
 
 export default function PermanentDrawerLeft() {
   const classes = useStyles();
+    const imgHeight = '40px'
+    const textSize = '0.8em'
 
   return (
     <Drawer
@@ -59,17 +72,58 @@ export default function PermanentDrawerLeft() {
         }}
         anchor="left"
       >
-        <div className={classes.toolbar} />
-          <Divider />
+        <Divider/>
           <List style={{ textAlign: 'center' }} >
-            {['Main Page', 'Problem Definition', 'New Life', 'Video', 'Frequency', 'Economic Viability', 'Works how?', 'Graphs'].map((text, index) => (
-            <ListItem className={classes.listElement} button key={text}>
-                  <ListItemIcon>{index % 2 === 0 ? <img style={{ width: '80px' }} src={media.images.WebsitePictures.battery.default} />
-                      : <img style={{ width: '80px' }} src={media.images.WebsitePictures.car.default} />}
+              <ListItem onClick={() => window.scrollTo({ top: windowheight * 0, behavior: 'smooth' })} className={classes.listElement} button key={'Main Page'}>
+                  <ListItemIcon> <img style={{ marginLeft: 'auto', marginRight:'auto', height: imgHeight }} src={media.images.Sidebar.icon1.default} />
                   </ListItemIcon>
-                    <ListItemText className={classes.IconText} style={{ color: 'white', }} primary={text} />
+                  <ListItemText disableTypography style={{ fontSize: textSize, color: 'white', }} primary={'Main Page'} />
             </ListItem>
-          ))}
+              <ListItem onClick={() => window.scrollTo({ top: windowheight * 1, behavior: 'smooth' })} className={classes.listElement} button key={'Problem Definition'}>
+                  <ListItemIcon> <img style={{ marginLeft: 'auto', marginRight: 'auto',  height: imgHeight }} src={media.images.Sidebar.icon2.default} />
+                </ListItemIcon>
+                  <ListItemText disableTypography style={{ fontSize: textSize, color: 'white', }} primary={'Problem Definition'} />
+            </ListItem>
+              <ListItem onClick={() => window.scrollTo({ top: windowheight * 2, behavior: 'smooth' })} className={classes.listElement} button key={'Flow Chart'}>
+                  <ListItemIcon> <img style={{ marginLeft: 'auto', marginRight: 'auto',  height: imgHeight }} src={media.images.Sidebar.icon3.default} />
+                </ListItemIcon>
+                  <ListItemText disableTypography style={{ fontSize: textSize, color: 'white', }} primary={'Flow Chart'} />
+              </ListItem>
+              <ListItem onClick={() => window.scrollTo({ top: windowheight*3, behavior: 'smooth' })} className={classes.listElement} button key={'New Life'}>
+                  <ListItemIcon> <img style={{ marginLeft: 'auto', marginRight: 'auto',  height: imgHeight }} src={media.images.Sidebar.icon4.default} />
+                </ListItemIcon>
+                  <ListItemText disableTypography style={{ fontSize: textSize, color: 'white', }} primary={'New Life'} />
+              </ListItem>
+              <ListItem onClick={() => window.scrollTo({ top: windowheight * 4, behavior: 'smooth' })} className={classes.listElement} button key={'Video'}>
+                  <ListItemIcon> <img style={{ marginLeft: 'auto', marginRight: 'auto', height: imgHeight }} src={media.images.Sidebar.icon10.default} />
+                  </ListItemIcon>
+                  <ListItemText disableTypography style={{ fontSize: textSize, color: 'white', }} primary={'Video'} />
+              </ListItem>
+              <ListItem onClick={() => window.scrollTo({ top: windowheight * 5, behavior: 'smooth' })} className={classes.listElement} button key={'Frequency'}>
+                  <ListItemIcon> <img style={{ marginLeft: 'auto', marginRight: 'auto',  height: imgHeight }} src={media.images.Sidebar.icon5.default} />
+                </ListItemIcon>
+                  <ListItemText disableTypography style={{ fontSize: textSize, color: 'white', }} primary={'Frequency'} />
+            </ListItem>
+              <ListItem onClick={() => window.scrollTo({ top: windowheight * 6, behavior: 'smooth' })} className={classes.listElement} button key={'Economic Viability'}>
+                  <ListItemIcon> <img style={{ marginLeft: 'auto', marginRight: 'auto',  height: imgHeight }} src={media.images.Sidebar.icon6.default} />
+                </ListItemIcon>
+                  <ListItemText disableTypography style={{ fontSize: textSize, color: 'white', }} primary={'Economic Viability'} />
+            </ListItem>
+              <ListItem onClick={() => window.scrollTo({ top: windowheight * 7, behavior: 'smooth' })} className={classes.listElement} button key={'Works how?'}>
+                  <ListItemIcon> <img style={{ marginLeft: 'auto', marginRight: 'auto',  height: imgHeight }} src={media.images.Sidebar.icon7.default} />
+                </ListItemIcon>
+                  <ListItemText disableTypography style={{ fontSize: textSize, color: 'white', }} primary={'Works how?'} />
+            </ListItem>
+              <ListItem onClick={() => window.scrollTo({ top: windowheight * 9, behavior: 'smooth' })} className={classes.listElement} button key={'Graphs'}>
+                  <ListItemIcon> <img style={{ marginLeft: 'auto', marginRight: 'auto',  height: imgHeight }} src={media.images.Sidebar.icon8.default} />
+                </ListItemIcon>
+                  <ListItemText disableTypography style={{ fontSize: textSize, color: 'white', }} primary={'Graphs'} />
+            </ListItem>
+              <ListItem onClick={() => window.scrollTo({ top: (windowheight+20) * 10, behavior: 'smooth' })} className={classes.listElement} button key={'Extra'}>
+                  <ListItemIcon> <img style={{ marginLeft: 'auto', marginRight: 'auto',  height: '2vh', width: '5vh' }} src={media.images.Sidebar.icon9.default} />
+                </ListItemIcon>
+                  <ListItemText disableTypography style={{ fontSize: textSize, color: 'white', }} primary={'Extra'} />
+            </ListItem>
         </List>
         <Divider/>
     </Drawer>    

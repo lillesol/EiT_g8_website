@@ -34,14 +34,14 @@ const Slide2 = () => {
     const slideStyles = useStyles();
     return (
         <div className="Slide2">
-            <Grid container direction='row' spacing={5} justify='flex-start' className={slideStyles.graphGrid}>
-                <Grid item style={{ fontSize: '30px', width: '30vw' }}>
+            <Grid container direction='row' spacing={4} justify='flex-start' className={slideStyles.graphGrid}>
+                <Grid item xs={4} style={{ fontSize: '30px' }}>
                     <h1> A new  <span style={{ color: 'ORANGE', fontSize: '96px' }}>life</span> </h1>
                     The market for electrical cars is rapidly increasing 
                     and a huge amount of electrical car batteries are produced.
                     The RE-vengers will utilize the end of use batteries, giving them new life.
                     </Grid>
-                <Grid xs={6} item style={{ fontSize: '30px', marginLeft: '120px' }} >
+                <Grid xs={7} item style={{ fontSize: '30px' }} >
                     <Grid container justify='flex-end' direction='row'>
                         <Grid item className={slideStyles.image}>
                             <img className={slideStyles.image} src={media.images.WebsitePictures.PowerlineOrg.default} />

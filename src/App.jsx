@@ -11,17 +11,20 @@ import media from './media';
 import { makeStyles } from '@material-ui/core';
 import PermanentDrawerLeft from './components/PermanentDrawerLeft';
 import InfoBoxSlide from './slides/InfoBoxSlide';
+import ProblemDefSlide from './slides/ProblemDefSlide';
+import ExpandedDiagramSlide from './slides/ExpandedDiagramSlide';
+import PowerCongestionSlide from './slides/PowerCongestionSlide';
 
 const useStyles = makeStyles((theme) => ({
     root: {
         height: '100vh',
         backgroundColor: '#2F303A',
         fontFamily: 'Poppins',
-        width: '90%',
+        width: '93%',
         backgroundPositionX: '10%',
         float: 'right',
         backgroundImage: `url(${media.images.StaticBackground.default})`,
-        backgroundPosition: 'center',
+        backgroundPosition: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundAttachment: 'fixed',
         
@@ -34,19 +37,22 @@ const App = () => {
     return (
         <>
         <div className={appStyles.root}>
-        <PermanentDrawerLeft />
+            <PermanentDrawerLeft />
 
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet"/>
-        <Slide1 />
-        <Slide2 />
-        <Videoslide/>
-        <Slide3 />
-        <Slide4 />
-        <Slide5/>
-        <Graphslide />
-        <InfoBoxSlide/>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet"/>
+            <Slide1 id='top' />
+            <ProblemDefSlide id='problemDef' />
+            <ExpandedDiagramSlide id='diagram' />
+            <Slide2 id='life'/>
+            <Videoslide id='video'/>
+            <Slide3 id='frequency' />
+            <PowerCongestionSlide id='power'/>
+            <Slide4 id='work'/>
+            <Slide5 />
+            <Graphslide id='graph' />
+            <InfoBoxSlide id='info'/>
         </div>
-    </>
+        </>
     );
 }
 
