@@ -25,7 +25,8 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         justifyContent: 'center',
         verticalAlign: 'middle',
-        paddingTop: '5%',
+        paddingTop: '0%',
+        width: '80%',
 
     },
 
@@ -57,14 +58,10 @@ const InfoBoxSlide = () => {
                         Click button below for additional information</div>
                         : (selectedInfo === 'Aquirement of batteries') ?
                             <>
-                                The most significant work on battery reuse and recycling is currently being done by the EYDE Cluster - 
-                                the Norwegian Centre of Expertise (NCE) for Sustainable Process Industry.
-                                The cluster consists of regional suppliers and multinational companies that deliver to the global market,
-                                as well as research organisations and educational institutions. These are primarily located in Southern Norway,
-                                a region with a strong tradition of producing tailor-made materials with a small environmental footprint using renewable energy.
-                                &#34;Meanwhile, the value of recycled Li-ion batteries is projected to reach $USD 700 per metric ton&#34;.
-                                The EYDE Cluster is running a cross-sectoral collaborative project called BATMAN 
-                                (Lithium ion Batteries - Norwegian opportunities within sustainable end-of-life MANagement, reuse and new material streams)
+                                <div> Since end-of-use electrical vehicle batteries are expensive to recycle the acquirement of
+                                batteries comes at a low cost basis. The RE-vengers will make partnerships with recycle
+                                centers and vehicle collection facilities.
+                                            </div>
 
                             </>
                             : (selectedInfo === 'Installation') ? <>
@@ -86,8 +83,10 @@ const InfoBoxSlide = () => {
                                 The utility company will then detect a much lower consumption peak and the consumer will get a lower maximum demand tariff.
                             </>
 
-                        : (selectedInfo === 'Profitability') ?
-                                            'NEED TEXT'
+                        : (selectedInfo === 'Profitability') ?<>
+                                            <img style={{height: '45vh'}} src={media.images.InfoBoxImages.Profitability.default} />
+                                            <div>r = discount rate </div>
+                            </>
                         : 'none'
                     }
 

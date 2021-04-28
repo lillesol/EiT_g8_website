@@ -47,16 +47,16 @@ const PowerCongestionSlide = () => {
                     risk not being able to provide power at peak consumption hours. They have therefore 
                     added a maximum demand tariff for consumers. 
                     This results in the consumer being charged extra for the hours with the highest 
-                    power demand during a month. The “RE-vengers” battery system is designed to
-                    perform “peak-shaving” to reduce peak hour consumptiom and utility costs.
+                    power demand during a month. The RE-vengers battery system is designed to
+                    perform peak-shaving to reduce peak hour consumptiom and utility costs.
                 </Grid>
                 <Grid xs={6} item style={{ fontSize: '30px', color: 'grey' }} >
                     <Grid container justify='flex-end' direction='column'>
                         <Grid item className={slideStyles.quote}>
-                            &#34; Did you know that Norway is the battery capital of Europe? &#34;
+                            &#34;Did you know that Norway is the battery capital of Europe?&#34;
                         </Grid>
                         <Grid item className={slideStyles.quote}>
-                            &#34; In 2020, 54% of all car sales were electrical cars &#34;
+                            &#34;In 2020, 54% of all car sales were electrical cars&#34;
                         </Grid>
                         
                     </Grid>

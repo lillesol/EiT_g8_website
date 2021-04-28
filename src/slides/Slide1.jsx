@@ -42,7 +42,7 @@ const Slide1 = () => {
                     </Grid>
                     <Grid item style={{ fontSize: '30px' }}>
                         <h1>
-                            The RE-Venger battery pack
+                            The RE-Vengers battery pack
                         </h1>
                         Innovation and renewable energy
                     </Grid>

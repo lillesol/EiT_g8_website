@@ -17,6 +17,7 @@ const media = {
         InfoBoxImages: {
             RecyclingMethodDiagram: require('./images/WebsitePictures/Recycling_method_table.png'),
             BuildingBob: require('./images/WebsitePictures/Byggmester_bob.png'),
+            Profitability: require('./images/WebsitePictures/NPV.PNG'),
 
             Icons: {
                 AquirementBattery: require('./images/WebsitePictures/checkbox_acquirement_of_batteries.png'),
