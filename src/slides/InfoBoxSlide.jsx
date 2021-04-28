@@ -85,6 +85,7 @@ const InfoBoxSlide = () => {
 
                         : (selectedInfo === 'Profitability') ?<>
                                             <img style={{height: '45vh'}} src={media.images.InfoBoxImages.Profitability.default} />
+                                            <div>Projected value of an initial investment of 10 million NOK at given discount rates</div>
                                             <div>r = discount rate </div>
                             </>
                         : 'none'
