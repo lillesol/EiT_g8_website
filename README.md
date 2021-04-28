@@ -22,7 +22,8 @@ Then redo the step above,
 ```bash
 npm install -g npm@latest
 ```
-
+If the instructions do not help it is a general good idea to search the error message you get from running "npm install",
+and running the relevant solution.
 
 ## Usage
 In order to run the project locally type the command below after doing the steps above.
