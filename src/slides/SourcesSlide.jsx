@@ -35,9 +35,6 @@ const ProblemDefSlide = () => {
             <Grid container direction='row' className={slideStyles.textItem}>
                 <Grid item >
                     &#34;In excess of 60.000 Norwegians has experienced blackout due to falling trees during the night.&#34;
-                    <a href={'https://norwaytoday.info/news/blackout-for-many-due-to-storms-in-norway'} >
-                    <span style={{ fontSize: '20px' }}>source</span></a>
-
                 </Grid>
             </Grid>
         </div>

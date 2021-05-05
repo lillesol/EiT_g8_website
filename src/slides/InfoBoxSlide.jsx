@@ -74,9 +74,11 @@ const InfoBoxSlide = () => {
                                 </Grid>
                             </Grid>
                             </>
-                        : (selectedInfo === 'Recycling Methods') ?
-                            <img style={{ width: '100%' }} src={media.images.InfoBoxImages.RecyclingMethodDiagram.default} />
-                            
+                        : (selectedInfo === 'Recycling Methods') ?<>
+                                    <img style={{ width: '100%' }} src={media.images.InfoBoxImages.RecyclingMethodDiagram.default} />
+                                    <a style={{marginLeft: '60vw' }} href={'https://www.sciencedirect.com/science/article/pii/S2351978919305104?fbclid=IwAR0h_fK0oxWwnMCcs8LsuBxgz71TtYzhtoGVpgQWQK6cqrX2bMQL13ielP0'} >
+                            <span style={{ fontSize: '20px', }}>source</span></a>
+                            </>               
                         : (selectedInfo === 'Peak Shaving') ?<>
                                 To reduce high power tariffs, the RE-venger battery system is equipped with software that can predict power demand peaks of a consumer.
                                 When the software detects a demand peak incoming, the battery will discharge and supply the consumer with electric power.

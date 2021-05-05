@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     IconText: {
         color: 'white',
         textAlign: 'inherit',
-        fontSize: '10em',
+        fontSize: '10px',
     },
 
     drawerPaper: {
@@ -61,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
 export default function PermanentDrawerLeft() {
   const classes = useStyles();
     const imgHeight = '40px'
-    const textSize = '0.8em'
+    const textSize = '0.7em'
 
   return (
     <Drawer
@@ -120,7 +120,7 @@ export default function PermanentDrawerLeft() {
                   <ListItemText disableTypography style={{ fontSize: textSize, color: 'white', }} primary={'Power Analysis'} />
             </ListItem>
               <ListItem onClick={() => window.scrollTo({ top: (windowheight+20) * 10, behavior: 'smooth' })} className={classes.listElement} button key={'Extra'}>
-                  <ListItemIcon> <img style={{ marginLeft: 'auto', marginRight: 'auto',  height: '2vh', width: '5vh' }} src={media.images.Sidebar.icon9.default} />
+                  <ListItemIcon> <img style={{ marginLeft: 'auto', marginRight: 'auto',  height: '1vh', width: '5vh' }} src={media.images.Sidebar.icon9.default} />
                 </ListItemIcon>
                   <ListItemText disableTypography style={{ fontSize: textSize, color: 'white', }} primary={'Extra'} />
             </ListItem>

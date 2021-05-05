@@ -54,9 +54,14 @@ const PowerCongestionSlide = () => {
                     <Grid container justify='flex-end' direction='column'>
                         <Grid item className={slideStyles.quote}>
                             &#34;Did you know that Norway is the battery capital of Europe?&#34;
+                            <a href={'https://www.theexplorer.no/stories/energy/building-a-circular-battery-economy-in-norway/?fbclid=IwAR0rD0TO5KCnbPqnRp6ZUbLNM4B5Xt0m5dNk40aPRbRPJpX2rCk6TyW3DYg'} >
+                                <span style={{ fontSize: '20px' }}>source</span></a>
                         </Grid>
+
                         <Grid item className={slideStyles.quote}>
                             &#34;In 2020, 54% of all car sales were electrical cars&#34;
+                            <a href={'https://www.theexplorer.no/stories/energy/building-a-circular-battery-economy-in-norway/?fbclid=IwAR0rD0TO5KCnbPqnRp6ZUbLNM4B5Xt0m5dNk40aPRbRPJpX2rCk6TyW3DYg'} >
+                                <span style={{ fontSize: '20px' }}>source</span></a>
                         </Grid>
                         
                     </Grid>
